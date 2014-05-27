@@ -1,0 +1,16 @@
+2014/05/11 17:59:30 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'VAG.SystemUsers' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `SystemUsers`.
+in /var/www/vag_app/index.php (13)
+2014/05/11 17:59:30 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'VAG.SystemUsers' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `SystemUsers`.
+in /var/www/vag_app/index.php (13)
+2014/05/11 17:59:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'VAG.SystemUsers' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `SystemUsers`.
+in /var/www/vag_app/index.php (13)
+2014/05/11 17:59:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'VAG.SystemUsers' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `SystemUsers`.
+in /var/www/vag_app/index.php (13)
+2014/05/11 18:04:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'VAG.SystemUsers' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `SystemUsers`.
+in /var/www/vag_app/index.php (13)
+2014/05/11 18:04:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'VAG.SystemUsers' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `SystemUsers`.
+in /var/www/vag_app/index.php (13)
+2014/05/11 18:04:44 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'VAG.SystemUsers' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `SystemUsers`.
+in /var/www/vag_app/index.php (13)
+2014/05/11 18:04:44 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'VAG.SystemUsers' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `SystemUsers`.
+in /var/www/vag_app/index.php (13)
