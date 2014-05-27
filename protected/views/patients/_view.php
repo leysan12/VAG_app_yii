@@ -17,8 +17,8 @@
 	<?php echo CHtml::encode($data->birthdate); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('female')); ?>:</b>
-	<?php echo CHtml::encode($data->female); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('gender')); ?>:</b>
+	<?php echo CHtml::encode($data->gender); ?>
 	<br />
 
 

@@ -24,6 +24,28 @@ blockquote, q {quotes:"" "";}
 a img {border:none;}
 :focus {outline:0;}
 
+/*added from iOs template*/
+.center {text-align:center;}
+strong,.strong {font-weight:bold;}
+.box-white {
+	background:#fff;
+	width: 400px;
+	color:#4C556C;
+	font-weight:normal;
+	border:1px solid #B4B7BB;
+	border-radius:10px;}
+.detail {color: #999;float: none;font-size:12px;margin-left:5px;}
+.title {height:100%;left:0;top:0;vertical-align:top;width:300px;z-index:1;}
+.IdURL {color: #08c;padding: 0;margin: 0;border-collapse: collapse;border-spacing: 0;-webkit-font-smoothing: antialiased;}
+.nav1{
+	background:#D9DCE0;border-top:1px solid #E7EAED;
+	border-bottom:1px solid #D0D3D7;
+	color:#4C536C;display:block;
+	text-shadow:0 1px 1px #ccc;font-size: 100%;
+	font-weight:900padding: 12px 10px 16px 10px;
+	text-decoration:none;}
+.login-box {margin-right:auto; margin-left:auto;width: 406px;"}
+
 /* typography.css */
 html {font-size:100.01%;}
 body {font-size:75%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
@@ -78,7 +100,7 @@ caption {background:#eee;}
 .bottom {margin-bottom:0;padding-bottom:0;}
 
 /* grid.css */
-.container {width:950px;margin:0 auto;}
+.container {width:950px;margin:0 auto;background:#d8dae0;height:100%;position:relative;vertical-align:top;}
 .column, .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-20, .span-21, .span-22, .span-23, .span-24 {float:left;margin-right:10px;}
 .last {margin-right:0;}
 .span-1 {width:30px;}

@@ -7,7 +7,7 @@
  * @property integer $idPatients
  * @property string $md5hash
  * @property string $birthdate
- * @property integer $female
+ * @property integer $gender
  *
  * The followings are the available model relations:
  * @property AKSS[] $aKSSes
@@ -45,13 +45,13 @@ class Patients extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('md5hash, birthdate, female', 'required'),
-			array('female', 'numerical', 'integerOnly'=>true),
+			array('md5hash, birthdate, gender', 'required'),
+			array('gender', 'numerical', 'integerOnly'=>true),
 			array('md5hash', 'length', 'max'=>64),
 			array('birthdate', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('idPatients, md5hash, birthdate, female', 'safe', 'on'=>'search'),
+			array('idPatients, md5hash, birthdate, gender', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -81,7 +81,7 @@ class Patients extends CActiveRecord
 			'idPatients' => 'Id Patients',
 			'md5hash' => 'Md5hash',
 			'birthdate' => 'Birthdate',
-			'female' => 'Female',
+			'gender' => 'Gender',
 		);
 	}
 
@@ -99,7 +99,7 @@ class Patients extends CActiveRecord
 		$criteria->compare('idPatients',$this->idPatients);
 		$criteria->compare('md5hash',$this->md5hash,true);
 		$criteria->compare('birthdate',$this->birthdate,true);
-		$criteria->compare('female',$this->female);
+		$criteria->compare('gender',$this->gender);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

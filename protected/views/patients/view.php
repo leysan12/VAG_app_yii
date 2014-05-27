@@ -24,6 +24,6 @@ $this->menu=array(
 		'idPatients',
 		'md5hash',
 		'birthdate',
-		'female',
+		'gender',
 	),
 )); ?>

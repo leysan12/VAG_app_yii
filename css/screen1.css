@@ -27,7 +27,15 @@ color: #fff;border-radius: 5px;border: 1px solid #6d6d6d;font-size: 12px;left: 3
 			#main .content .title3 {}
 			#main .content .title4 {}
 			#main .content .title5 {}
-			#main .content>p {color:#4C536C;margin:10px 0;text-shadow:0 1px 1px #ccc;}
+
+			/*Custom content titles*/
+			#main .content .title-c {font-size:18px;font-weight:bold;margin:20px 0 10px;text-align:center;}
+			#main .content .title-c2 {color:#4C536C;font-size:16px;font-weight:bold;margin:20px 0 10px;}
+			#main .content .title-c3 {}
+			#main .content .title-c4 {}
+			#main .content .title-c5 {}
+
+			#main .content p {color:#4C536C;margin:10px 0;text-shadow:0 1px 1px #ccc;}
 			#main .content p.note {color:#4C536C;font-size:12px;text-align:center;text-shadow:0 1px 1px #ccc;}
 			
 			/* Box white */
@@ -37,6 +45,17 @@ color: #fff;border-radius: 5px;border: 1px solid #6d6d6d;font-size: 12px;left: 3
 				#main .content .box-white p span {color:#4C556C;float:right;font-weight:normal;}
 					#main .content .box-white p span.detail {color: #999;float: none;font-size:12px;margin-left:5px;}
 					#main .content .box-white p span.arrow {color: #666;float: none;font-family: monospace;font-weight: bold;margin-left: 5px;text-shadow: 0 1px 1px #666;}
+			
+			/* Box white 1 - custom*/
+			#main .content .login-box {margin-right:auto; margin-left:auto;width: 406px;"}
+			#main .content .box-white1 {background:#fff;border:1px solid #B4B7BB;border-radius:10px;width: 406px;}
+				#main .content .box-white1 p {color:#000;border-bottom:1px solid #B4B7BB;font-weight:bold;margin:0;padding:10px;width: 406px;}
+					#main .content .box-white1 p:last-child {border-bottom:none;}
+				#main .content .box-white1 p span {color:#4C556C;float:right;font-weight:normal;}
+					#main .content .box-white1 p span.detail {color: #999;float: none;font-size:12px;margin-left:5px;}
+					#main .content .box-white1 a span.IdURL {color: #08c;padding: 0;margin: 0;border-collapse: collapse;border-spacing: 0;-webkit-font-smoothing: antialiased;}
+					#main .content .box-white1 a:hover span.IdURL  {text-decoration: underline;}
+					#main .content .box-white1 p span.arrow {color: #666;float: none;font-family: monospace;font-weight: bold;margin-left: 5px;text-shadow: 0 1px 1px #666;}
 			
 			/* Tables */
 			#main table {margin:20px 0 10px;width:100%;}
@@ -87,6 +106,17 @@ border-color:#9A8185;}
 						#sidebar .content .nav a.active span {color:#fff;}
 					#sidebar .content .nav a .ico {background:#999;border-radius:5px;display: inline-block;float: none;height: 28px;margin: -5px 10px 0 0;vertical-align: middle;width: 28px;}
 					#sidebar .content .nav a .info {background: #E20000;border: 1px solid #C00;border-radius: 100%;box-shadow:0 1px 1px #999;color: white;font-size: 12px;display: block;padding: 1px 5px;}
+			#sidebar .content p {color:#4C536C;font-size:14px;padding:10px;text-shadow:0 1px 1px #ccc;}
+
+/*custom sidebar*/
+			#sidebar .content .nav1 {} 
+				#sidebar .content .nav1 .txt {background:#D9DCE0;border-top:1px solid #E7EAED;border-bottom:1px solid #D0D3D7;color:#4C536C;display:block;text-shadow:0 1px 1px #ccc;font-size: 100%;font-weight:900padding: 12px 10px 16px 10px;text-decoration:none;}
+					#sidebar .content .nav1 a.active {background: #0375EE;/* Old browsers */background: -moz-linear-gradient(top, #058CF5 0%, #015DE6 100%); /* FF3.6+ */background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#058CF5), color-stop(100%,#015DE6)); /* Chrome,Safari4+ */background: -webkit-linear-gradient(top, #058CF5 0%,#015DE6 100%); /* Chrome10+,Safari5.1+ */background: -o-linear-gradient(top, #058CF5 0%,#015DE6 100%); /* Opera 11.10+ */background: -ms-linear-gradient(top, #058CF5 0%,#015DE6 100%); /* IE10+ */background: linear-gradient(top, #058CF5 0%,#015DE6 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#058CF5', endColorstr='#015DE6',GradientType=0 ); /* IE6-9 */
+					border-top:1px solid #015DE6;color:#fff;text-shadow:0 1px 1px #333;}
+					#sidebar .content .nav1 a span {color:#4C556C;float:right;font-weight:normal;}
+						#sidebar .content .nav1 a.active span {color:#fff;}
+					#sidebar .content .nav1 a .ico {background:#999;border-radius:5px;display: inline-block;float: none;height: 28px;margin: -5px 10px 0 0;vertical-align: middle;width: 28px;}
+					#sidebar .content .nav1 a .info {background: #E20000;border: 1px solid #C00;border-radius: 100%;box-shadow:0 1px 1px #999;color: white;font-size: 12px;display: block;padding: 1px 5px;}
 			#sidebar .content p {color:#4C536C;font-size:14px;padding:10px;text-shadow:0 1px 1px #ccc;}
 
 /* All portable */

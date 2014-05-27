@@ -13,7 +13,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'idPatients'); ?>
-		<?php echo $form->textField($model,'idPatients'); ?>
+		<?php echo $form->textField($model,'idPatients',array('size'=>10,'maxlength'=>10)); ?>
 	</div>
 
 	<div class="row">
@@ -23,12 +23,12 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'birthdate'); ?>
-		<?php echo $form->textField($model,'birthdate',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->textField($model,'birthdate'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'female'); ?>
-		<?php echo $form->textField($model,'female'); ?>
+		<?php echo $form->label($model,'gender'); ?>
+		<?php echo $form->textField($model,'gender'); ?>
 	</div>
 
 	<div class="row buttons">
