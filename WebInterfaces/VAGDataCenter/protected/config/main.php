@@ -32,7 +32,7 @@ return array(
 	'components'=>array(
 		'user'=>array(
 			// enable cookie-based authentication
-			'allowAutoLogin'=>true,
+			'allowAutoLogin'=>false,
 		),
 		// uncomment the following to enable URLs in path-format
 		/*
@@ -54,6 +54,7 @@ return array(
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=VAG',
 			'emulatePrepare' => true,
+			'enableParamLogging' => true,
 			'username' => 'DataCenter',
 			'password' => '45fb2e0533b1f4d1e80f1504a65738be',
 			'charset' => 'utf8',
@@ -61,6 +62,7 @@ return array(
 		'dbSecret'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=VAGPatientsSecret',
 			'emulatePrepare' => true,
+			'enableParamLogging' => true,
 			'username' => 'DataCenter',
 			'password' => '45fb2e0533b1f4d1e80f1504a65738be',
 			'charset' => 'utf8',
@@ -79,19 +81,23 @@ return array(
 					'levels'=>'error, warning',
 				),
 				// uncomment the following to show log messages on web pages
-				/*
+				//*
 				array(
 					'class'=>'CWebLogRoute',
-				),
-				*/
+				),//*/
 			),
 		),
+		/*
+		'authManager'=>array(
+			'class'=>'CDbAuthManager',
+			'connectionID'=>'db',
+		),//*/
 	),
 
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
+		'adminEmail'=>'oussama.jarrousse@gmail.com',
 	),
 );

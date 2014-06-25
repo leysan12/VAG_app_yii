@@ -7,6 +7,8 @@
  */
 class UserIdentity extends CUserIdentity
 {
+	
+	private $idSystemUser;
 	/**
 	 * Authenticates a user.
 	 * The example implementation makes sure if the username and password
@@ -17,6 +19,24 @@ class UserIdentity extends CUserIdentity
 	 */
 	public function authenticate()
 	{
+		$user = SystemUsers::model()->findByAttributes(array('username'=>$this->username));
+		
+		if($user === NULL)
+		{
+			$this->errorCode=self::ERROR_USERNAME_INVALID;
+		}
+		elseif ($user->password !== $this->password)
+		{
+			$this->errorCode=self::ERROR_PASSWORD_INVALID;
+		}
+		else
+		{
+			$this->errorCode=self::ERROR_NONE;
+			$this->idSystemUser=$user->idSystemUser;
+			echo"Hello";
+		}
+		return !$this->errorCode;
+		/*
 		$users=array(
 			// username => password
 			'demo'=>'demo',
@@ -29,5 +49,11 @@ class UserIdentity extends CUserIdentity
 		else
 			$this->errorCode=self::ERROR_NONE;
 		return !$this->errorCode;
+		*/
+	}
+	
+	public function getId()
+	{
+		return $this->idSystemUser;
 	}
 }

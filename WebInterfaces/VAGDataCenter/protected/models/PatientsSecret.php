@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This is the model class for table "PatientsSecret".
+ * This is the model class for table "PatientsSecret"
  *
  * The followings are the available columns in table 'PatientsSecret':
  * @property string $idPatientsSecret
@@ -38,17 +38,38 @@ class PatientsSecret extends CActiveRecord
 			array('firstname, lastname', 'length', 'max'=>45),
 			array('firstname, lastname', 'filter', 'filter'=>'trim'),
 			array('firstname, lastname', 'filter', 'filter'=>'strip_tags'),
-			array('birthdate','date'),
+			array('birthdate','date','format'=>'yyyy-MM-dd'),//MySQL Format
 			array('md5', 'length', 'max'=>32),
-			
 			array('gender', 'numerical', 'integerOnly'=>true, 'min'=>0, 'max'=>1),
-			array('birthdate','date'),
+			array('md5','unique'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('idPatientsSecret, firstname, lastname, birthdate, md5, gender', 'safe', 'on'=>'search'),
 		);
 	}
-
+	protected function afterFind ()
+	{
+		// convert to display format
+		$this->birthdate = strtotime ($this->birthdate);
+		$this->birthdate = date('d.m.Y', $this->birthdate);
+		parent::afterFind ();
+	}
+	protected function beforeValidate ()
+	{
+		// convert to storage format
+		$this->birthdate = strtotime ($this->birthdate);
+		$this->birthdate = date ('Y-m-d', $this->birthdate);
+		return parent::beforeValidate ();
+	}
+	/*
+	protected function afterSave()
+	{
+		//if validation failed... 
+		$this->birthdate = date('d.m.Y',strtotime($this->birthdate));
+		return parent::afterSave();
+	}
+	//*/
+	
 	/**
 	 * @return array relational rules.
 	 */
@@ -76,7 +97,10 @@ class PatientsSecret extends CActiveRecord
 			'gender' => 'Gender',
 		);
 	}
-
+	public function GetGenderLabel()
+	{
+		return $this->gender == 0 ? 'Male' : 'Female';
+	}
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
 	 *
